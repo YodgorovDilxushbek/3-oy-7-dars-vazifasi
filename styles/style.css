@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #0a0a0a;
+    background-image: url(../image/bagraund-image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+.header {
+    text-align: left;
+    display: inline-block;
+    padding: 40px 0;
+    background-color: rgba(97, 97, 97, 0.34); 
+    z-index: -1;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.header h1 {
+    font-size: 3rem;
+}
+
+.header h1 span {
+    color: #00e0ff;
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    max-width: 500px;
+}
+
+.header button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00e0ff;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+.header button:hover{
+    color: bisque;
+    background-color: #04baf1;
+    padding: 20px 40px;
+}
+
+.image {
+    text-align: right;
+    margin: 20px 0;
+    
+   
+}
+
+.image img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    background-color: rgba(97, 97, 97, 0.34); 
+    z-index: -1;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.feature {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1rem;
+}
+.feature img{
+    margin-left: -10px;
+    margin-bottom: -20px;
+}
+.div__color{
+    display: flex;
+   margin-left: 1470px;
+    margin-top: 10px;
+    position: fixed;
+    
+}
+.color1{
+    background-color: rgba(255, 255, 103, 1);
+    width: 16px;
+    height: 16px;
+    
+}
+.color2{
+    background-color: rgba(63, 255, 255, 1);
+    width: 16px;
+    height: 16px;
+    
+}
+.color3{
+    background-color: rgba(82, 220, 75, 1);
+    width: 16px;
+    height: 16px;
+    
+}
+.color4{
+    background-color:rgba(255, 110, 61, 1) ;
+    width: 16px;
+    height: 16px;
+    
+}
+.color5{
+    background-color:rgba(61, 69, 255, 1);
+    width: 16px;
+    height: 16px;
+    
+}
+@media (min-width: 768px) {
+    .header h1 {
+        font-size: 2.5rem;
+    }
+
+    .header p {
+        font-size: 1.1rem;
+    }
+
+    .feature {
+        flex: 1148%; /* Two items per row on tablets */
+        margin: 10px 1%;
+    }
+    .features{
+       display: flex none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header h1 {
+        font-size: 3rem;
+    }
+
+    .header p {
+        font-size: 1.2rem;
+    }
+
+    .feature {
+        flex: 1 1 22%; /* Four items per row on desktops */
+        margin: 10px 1%;
+    }
+}
